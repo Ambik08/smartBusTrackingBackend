@@ -2,10 +2,6 @@ package com.sbapp.smartBusTrackinggg.controller;
 
 import com.sbapp.smartBusTrackinggg.entity.Route;
 import com.sbapp.smartBusTrackinggg.service.RouteService;
-package com.sbapp.smartBusTrackinggg.controller;
-
-import com.sbapp.smartBusTrackinggg.entity.Route;
-import com.sbapp.smartBusTrackinggg.service.RouteService;
 import com.sbapp.smartBusTrackinggg.service.UserService;
 
 import org.springframework.http.HttpStatus;
