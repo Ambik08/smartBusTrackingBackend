@@ -110,4 +110,7 @@ public class UserService {
     public String getJWT(User existingUser) {
         return jwtService.generateToken(existingUser.getT(),existingUser.getRole());
     }
+    public boolean chkOrganisationName(String organisationName) {
+    return userRepository.findByOrganisationName(organisationName) != null;
+}
 }
