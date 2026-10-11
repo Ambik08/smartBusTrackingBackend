@@ -1,3 +1,4 @@
+```java
 package com.sbapp.smartBusTrackinggg.security;
 
 import org.springframework.context.annotation.Bean;
@@ -15,17 +16,19 @@ public class CorsConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(
-                List.of("http://localhost:5173")
-        );
+        config.setAllowedOrigins(List.of(
+                "http://localhost:5173",
+                "https://smartbustrackingg.vercel.app"
+        ));
 
-        config.setAllowedMethods(
-                List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")
-        );
+        config.setAllowedMethods(List.of(
+                "GET", "POST", "PUT", "DELETE", "OPTIONS"
+        ));
 
-        config.setAllowedHeaders(
-                List.of("Authorization", "Content-Type")
-        );
+        config.setAllowedHeaders(List.of(
+                "Authorization",
+                "Content-Type"
+        ));
 
         config.setAllowCredentials(false);
 
@@ -37,3 +40,4 @@ public class CorsConfig {
         return source;
     }
 }
+```
