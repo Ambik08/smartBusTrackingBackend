@@ -1,4 +1,3 @@
-```java
 package com.sbapp.smartBusTrackinggg.security;
 
 import org.springframework.context.annotation.Bean;
@@ -40,4 +39,4 @@ public class CorsConfig {
         return source;
     }
 }
-```
+
