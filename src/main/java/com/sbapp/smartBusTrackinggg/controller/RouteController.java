@@ -31,6 +31,8 @@ public class RouteController {
     public ResponseEntity<?> addRoute(
             @PathVariable String username,
             @RequestBody Route route) {
+        System.out.println("Username received: " + username);
+        System.out.println( "Username exists: " + userService.chkUsername(username));
 
         try {
 
