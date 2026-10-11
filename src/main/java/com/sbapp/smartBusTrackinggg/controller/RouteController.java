@@ -36,7 +36,7 @@ public class RouteController {
 
         try {
 
-            if (!userService.chkUsername(username)) {
+            if (!userService.chkOrganisationName(username)) {
 
                 return new ResponseEntity<>(
                         "Unable to add route",
